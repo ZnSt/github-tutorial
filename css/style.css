@@ -8,10 +8,11 @@
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #00000;
   --accent-color: #18a0fb;
+  --primary-white-color: #ffffff;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
 .list {
@@ -34,6 +35,10 @@ body {
   color: var(--title-text-color);
 }
 
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
 /* Hero */
 .hero-title {
   color: var(--title-text-color);
@@ -48,6 +53,24 @@ body {
 .feature-list .title {
   color: var(--title-text-color);
 }
-.feature-list .link {
+
+/* Exsamples */
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.button.secondary {
   color: var(--accent-color);
+  background-color: var(--primary-white-color);
 }
